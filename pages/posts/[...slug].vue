@@ -128,7 +128,7 @@ useHead({
       <ContentRenderer :value="post">
         <ContentRendererMarkdown :value="post" />
         <template #empty>
-          <p class="text-center mt-6">🤷🏼‍♂️ No content.</p>
+          <p class="text-center mt-6"> No Content.</p>
         </template>
       </ContentRenderer>
       <PrevNext
