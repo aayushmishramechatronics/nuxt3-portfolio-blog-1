@@ -47,7 +47,7 @@ defineProps<{
     <div class="mb-3">{{ data.description }}</div>
 
     <NuxtLink class="items-center flex" :to="data._path"
-      ><div class="mr-2">Read now</div>
+      ><div class="mr-2">Read Now</div>
       <div><IconsRightArrow /></div
     ></NuxtLink>
   </div>
