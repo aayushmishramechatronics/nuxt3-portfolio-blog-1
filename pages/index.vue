@@ -11,7 +11,7 @@ const repoListSorted = computed(() => {
 });
 
 useHead({
-  title: "Blogs by A.M",
+  title: "Bloggers | A.M",
   meta: [
     {
       property: "og:title",
@@ -19,7 +19,7 @@ useHead({
     },
     {
       property: "og:description",
-      content: "I'm a Developer, Graphic Designer, Roboticist.",
+      content: "Made by a Developer, Graphic Designer, Roboticist.",
     },
     {
       property: "og:url",
