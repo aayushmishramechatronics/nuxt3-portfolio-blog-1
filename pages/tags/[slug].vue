@@ -11,7 +11,7 @@ const query: QueryBuilderParams = {
 };
 
 useHead({
-  title: slug + " - Dmytro Tihunov",
+  title: slug + " - Aayush Mishra",
 });
 </script>
 
