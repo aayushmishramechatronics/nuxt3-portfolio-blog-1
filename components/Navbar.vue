@@ -5,7 +5,7 @@
     >
       <a href="/" class="flex items-center">
         <IconsLogo class="w-6 mr-3" />
-        <span class="font-recoleta font-semibold">D.Tihunov.</span></a
+        <span class="font-recoleta font-semibold">Aayush Anil Mishra</span></a
       >
 
       <div class="flex items-center">
