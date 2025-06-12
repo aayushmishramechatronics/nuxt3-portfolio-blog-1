@@ -46,7 +46,7 @@ const props = defineProps<{
             alt=""
           />
           <div>
-            <a href="#">@Tihunov</a>
+            <a href="#">@AayushMishra</a>
           </div>
         </div>
         <div class="flex">
