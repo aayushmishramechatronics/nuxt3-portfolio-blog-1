@@ -7,34 +7,32 @@ defineProps<{
 
 <template>
   <div
-    class="w-[100%] rounded-[12px] border border-[#c7c7c7] bg-[#f1f2f4] dark:border-[#34343a] p-3 dark:bg-[#232425]"
+    class="w-full h-[200px] flex flex-col justify-between rounded-[12px] border border-[#c7c7c7] bg-[#f1f2f4] dark:border-[#34343a] p-3 dark:bg-[#232425]"
   >
-    <NuxtLink target="_blank" :href="props.url">
-      <div class="flex items-center">
-        <IconsRepoIcon />
-        <h2 class="text-2xl font-recoleta font-semibold">
-          {{
-            props.name.length > 17
-              ? props.name.slice(0, 17) + "..."
-              : props.name
-          }}
-        </h2>
+    <NuxtLink target="_blank" :href="props.url" class="h-full flex flex-col justify-between">
+      <div>
+        <div class="flex items-center mb-1">
+          <IconsRepoIcon />
+          <h2 class="ml-2 text-2xl font-recoleta font-semibold truncate max-w-[85%]">
+            {{ props.name.length > 17 ? props.name.slice(0, 17) + "..." : props.name }}
+          </h2>
+        </div>
+        <p
+          class="mb-3 text-[13px] text-[#6f6f6f] dark:text-[#9ba1a6] line-clamp-2"
+        >
+          {{ props.description }}
+        </p>
       </div>
-      <p
-        class="mb-3 min-h-[39px] mt-1 text-[13px] text-[#6f6f6f] dark:text-[#9ba1a6]"
-      >
-        {{ props.description }}
-      </p>
 
       <div class="flex">
-        <div class="mr-2 flex items-center">
+        <div class="mr-2 flex items-center gap-1">
           <IconsStarIcon />
-          {{ props.stars }}
+          <span>{{ props.stars }}</span>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center gap-1">
           <IconsForkIcon />
-          {{ props.forks }}
+          <span>{{ props.forks }}</span>
         </div>
       </div>
     </NuxtLink>
