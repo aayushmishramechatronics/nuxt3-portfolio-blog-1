@@ -3,10 +3,10 @@
     class="p-6 rounded-lg border shadow-lg border-[#c7c7c7] dark:border-[#475584]"
   >
     <h3 class="font-recoleta font-semibold text-3xl sm:text-4xl mb-4">
-      Subscribe to the newsletter
+      Subscribe to the Newsletter
     </h3>
     <p class="mb-4">
-      If you like my content, consider signing up for my newsletter.
+      If you Like my Content, Consider Signing Up for My Newsletter.
     </p>
     <div class="mb-4">
       <input class="input w-[100%]" placeholder="Your Email" type="text" />
