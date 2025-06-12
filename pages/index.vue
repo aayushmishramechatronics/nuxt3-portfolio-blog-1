@@ -11,15 +11,15 @@ const repoListSorted = computed(() => {
 });
 
 useHead({
-  title: "Home - Dmytro Tihunov",
+  title: "Blogs by A.M",
   meta: [
     {
       property: "og:title",
-      content: "Dmytro Tihunov",
+      content: "Aayush Mishra",
     },
     {
       property: "og:description",
-      content: "I'm a frontend developer and javascript enthusiast.",
+      content: "I'm a Developer, Graphic Designer, Roboticist.",
     },
     {
       property: "og:url",
@@ -35,7 +35,7 @@ useHead({
     },
     {
       property: "og:image:alt",
-      content: "Dmytro Tihunov",
+      content: "Aayush Mishra",
     },
     {
       property: "og:image:width",
@@ -47,11 +47,11 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Dmytro Tihunov",
+      content: "Aayush Mishra",
     },
     {
       name: "twitter:description",
-      content: "I'm a frontend developer and javascript enthusiast.",
+      content: "I'm a Developer, Graphic Designer, Roboticist.",
     },
     {
       name: "twitter:image",
@@ -59,7 +59,7 @@ useHead({
     },
     {
       name: "twitter:image:alt",
-      content: "Dmytro Tihunov",
+      content: "Aayush Mishra",
     },
   ],
 });
@@ -69,25 +69,25 @@ useHead({
   <div class="max-w-5xl sm:px-4 xl:px-0 items-center py-8 mx-auto">
     <div class="sm:w-5/6 pt-10 sm:pt-20 pb-16">
       <h1 class="text-4xl sm:text-6xl font-recoleta font-semibold">
-        Dmytro Tihunov
+        Aayush Mishra
       </h1>
       <p class="text-2xl sm:text-3xl font-recoleta mt-10 font-light">
-        Hey, I'm a frontend developer and javascript enthusiast. My interests
-        include programming, web development, computer sience and blogging from
+        Hey, I'm a developer and an astronomy enthusiast. my interests
+        include web-development, robotics hardware, astronomy and blogging from
         time to time about my journey as a developer.
       </p>
       <div class="flex items-center font-recoleta mt-14">
         Follow me:
         <a
           target="_blank"
-          href="https://twitter.com/tihunov"
+          href="https://twitter.com/aayushmishra"
           class="social-home-button mr-2 ml-3"
         >
           <IconsTwitter class="w-4"
         /></a>
         <a
           target="_blank"
-          href="https://github.com/Dmytro-Tihunov"
+          href="https://github.com/aayushmishramechatronics"
           class="social-home-button"
         >
           <IconsGithub class="w-4 flex-inline" />
@@ -98,7 +98,7 @@ useHead({
     <div
       class="flex border-dashed border-t border-[#c7c7c7] dark:border-[#34343a] pt-10 flex-col"
     >
-      <h1 class="title mb-6">Latest posts:</h1>
+      <h1 class="title mb-6">Latest Posts:</h1>
       <div
         class="border rounded-[12px] p-4 pb-0 border-[#c7c7c7] dark:border-[#34343a]"
       >
@@ -130,7 +130,7 @@ useHead({
               </div>
             </template>
             <template #not-found>
-              <p>No articles found.</p>
+              <p>No Articles Found.</p>
             </template>
           </ContentList>
         </div>
@@ -141,7 +141,7 @@ useHead({
           >
             <IconsRightArrow />
           </div>
-          <div class="text-[14px]">See more posts</div>
+          <div class="text-[14px]">See More Posts</div>
         </a>
       </div>
     </div>
@@ -159,7 +159,7 @@ useHead({
     </div>
 
     <div class="flex flex-col mt-10">
-      <h1 class="title mb-6">Get In touch</h1>
+      <h1 class="title mb-6">Get In Touch</h1>
       <HomeContactForm />
     </div>
   </div>
