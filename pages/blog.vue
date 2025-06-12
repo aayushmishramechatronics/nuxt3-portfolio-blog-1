@@ -85,12 +85,12 @@ watch(meta_k, (v) => {
 });
 
 useHead({
-  title: "Blog - Dmytro Tihunov",
+  title: "Blogs - Aayush Mishra",
   meta: [
     {
       name: "description",
       content:
-        "been writing online since 2022, mostly about web development and tech careers. In total, written 51 articles on my blog. Use the search below to filter by title.",
+        "I have just started writing blogs on topics which I love yapping the most and I wondered as to what if there were people exactly like me who are interested in learning about various topics from different domains",
     },
     {
       name: "og:image",
@@ -116,9 +116,9 @@ useHead({
       Latest posts
     </h1>
     <p class="mb-5 font-recoleta">
-      I've been writing online since 2023, about web development, new
-      technologies, <br />useful tools and improving. I hope some of the
-      articles you will find useful for you :)
+      I have just started writing blogs on topics which I love yapping the most and
+      <br />I wondered as to what if there were people exactly like me 
+      who are interested in learning about various topics from different domains.
     </p>
 
     <div class="flex items-center relative justify-between gap-4">
@@ -171,6 +171,6 @@ useHead({
   </div>
 
   <div class="text-center mb-5" v-if="postsList.length <= 0 && !isPostsLoading">
-    🤷🏼‍♂️ No articles found.
+    🤷🏼‍♂️ No Articles Found.
   </div>
 </template>
