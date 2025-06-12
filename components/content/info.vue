@@ -27,7 +27,7 @@ const copyLink = () => {
     <div class="flex">
       <div class="mr-4">
         <div class="text-[11px] mb-1 text-[#6f6f6f] dark:text-[#9ba1a6]">
-          Written by
+          Written By
         </div>
         <div class="flex items-center">
           <div>
@@ -42,7 +42,7 @@ const copyLink = () => {
               class="text-[14px]"
               href="https://twitter.com/tihunov"
               target="_blank"
-              >@tihunov</a
+              >@aayush</a
             >
           </div>
         </div>
@@ -57,7 +57,7 @@ const copyLink = () => {
 
       <div class="mr-4">
         <div class="text-[11px] mb-1 text-[#6f6f6f] dark:text-[#9ba1a6]">
-          Reading time
+          Reading Time
         </div>
         <span class="text-[14px]">{{ props.readingTime }}</span>
       </div>
