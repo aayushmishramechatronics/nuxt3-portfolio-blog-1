@@ -77,7 +77,7 @@ useHead({
         time to time about my journey as a developer.
       </p>
       <div class="flex items-center font-recoleta mt-14">
-        Follow me:
+        Follow Me:
         <a
           target="_blank"
           href="https://twitter.com/aayushmishra"
