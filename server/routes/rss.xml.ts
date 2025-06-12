@@ -4,8 +4,8 @@ import RSS from "rss";
 
 export default defineEventHandler(async (event) => {
   const feed = new RSS({
-    Title: "Dmytro Tihunov",
-    site_url: "https://tihunov.com",
+    Title: "Aayush Mishra",
+    site_url: "https://portfolio-v0-alpha.vercel.app",
     feed_url: `https://tihunov.com/rss.xml`,
   });
 
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
   for (const doc of blogPosts) {
     feed.item({
       title: doc.title ?? "-",
-      url: `https://tihunov.com${doc._path}`,
+      url: `https://portfolio-v0-alpha.vercel.app${doc._path}`,
       date: doc.date,
       description: doc.description,
     });
