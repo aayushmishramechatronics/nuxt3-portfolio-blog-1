@@ -24,7 +24,7 @@ defineProps({
     <a
       class="text-[#6f6f6f] items-center hover:underline flex text-[13px] dark:text-[#9ba1a6]"
       href="#"
-      ><IconsArrowUp class="w-4" /> Back to top</a
+      ><IconsArrowUp class="w-4" /> Back to Top</a
     >
   </div>
 </template>
