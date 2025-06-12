@@ -18,13 +18,13 @@ export default defineEventHandler(async (event) => {
   }
 
   const response = await octokit.request("GET /users/{username}/repos", {
-    username: "Dmytro-Tihunov", // Your github username
+    username: "aayushmishramechatronics", // Your github username
   });
 
   if (!response) {
     throw createError({
       statusCode: 500,
-      statusMessage: "Github API response is undefined",
+      statusMessage: "Github API response is Un-Defined",
     });
   }
 
