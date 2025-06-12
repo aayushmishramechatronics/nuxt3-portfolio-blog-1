@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: repoList, pending: isReposLoading } = await useAsyncData(
-  "/gihub",
+  "/github",
   () => $fetch("/api/github")
 );
 
