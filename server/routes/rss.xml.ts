@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   const feed = new RSS({
     Title: "Aayush Mishra",
     site_url: "https://portfolio-v0-alpha.vercel.app",
-    feed_url: `https://tihunov.com/rss.xml`,
+    feed_url: `https://portfolio-v0-alpha.vercel.app/rss.xml`,
   });
 
   const docs = await serverQueryContent(event)
