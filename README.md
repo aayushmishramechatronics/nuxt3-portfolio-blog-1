@@ -1,19 +1,17 @@
-![](./public/preview/chrome-capture-2023-0-20.gif)
-
 Soon coming update
 
-# Tihunov.com
+# Aayush's Portfolio
 
 - Framework: [Nuxt 3](https://nuxt.com/v3)
 - Deployment: [Vercel](https://vercel.com)
-- Styling: [Tainwind CSS](https://tailwindcss.com)
+- Styling: [Tailwind CSS](https://tailwindcss.com)
 - Forms: [Notion](https://developers.notion.com) as a database
-- Blog: [Nuxt content](https://tailwindcss.com) v2
+- Blog: [Nuxt Content](https://tailwindcss.com) v2
 
 ## Setup
 
 ```bash
-git clone https://github.com/Dmytro-Tihunov/nuxt3-portfolio-blog
+git clone https://github.com/aayushmishramechatronics/nuxt3-portfolio-blog-1
 npm install
 pnpm install
 ```
@@ -22,7 +20,7 @@ Create a `.env` file similar to `.env.example.`
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the Development Server on http://localhost:3000
 
 ```bash
 npm run dev
@@ -30,16 +28,16 @@ npm run dev
 
 ## Production
 
-Build the application for production:
+Build the Application for Production:
 
 ```bash
 npm run build
 ```
 
-Locally preview production build:
+Locally Preview Production Build:
 
 ```bash
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check Out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
