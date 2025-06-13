@@ -73,7 +73,9 @@ useHead({
       </h1>
       <p class="text-2xl sm:text-3xl font-recoleta mt-10 font-light">
         Hi! this website is about positng Blogs - Technical (Game Development, Web Development, PCB/CAD Design, etc.), Astronomy/Astrophysics and 
-        Mathematics (Game Theory, Algebra, Calculus, etc.) - these are the domains which I'm specifically interested to talk/discuss about.
+        Mathematics (Game Theory, Algebra, Calculus, etc.) 
+        
+        These are the domains which I'm specifically interested to talk/discuss about.
         Do check-out this website on every weekend for a new blog/article on the topics that I have mentioned. Enjoy!
       </p>
       <div class="flex items-center font-recoleta mt-14">
