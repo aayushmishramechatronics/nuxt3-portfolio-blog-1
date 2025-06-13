@@ -1,6 +1,6 @@
 Soon coming update
 
-# Aayush's Portfolio
+# Aayush's Personal Blog
 
 - Framework: [Nuxt 3](https://nuxt.com/v3)
 - Deployment: [Vercel](https://vercel.com)
