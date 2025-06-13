@@ -10,7 +10,7 @@ export default eventHandler(async (event) => {
   const notion = new Client({ 
     auth: process.env.NUXT_PUBLIC_NOTION_TOKEN, // Change in .env
   });
-  const formDatabaseId: string = "210d872b-594c-8057-882f-0037b212d257" ?? ""; // Change accordingly to your database id
+  const formDatabaseId: string = "2113acc659d680c98661effb4a0b5fe0" ?? ""; // Change accordingly to your database id
 
   const response = await notion.pages.create({
     parent: {
