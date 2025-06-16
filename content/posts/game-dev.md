@@ -2,7 +2,7 @@
 title: How to Develop your Own Game in Phaser.js?
 description: A Beginner's Guide to Understanding basics of Game Development, using JS Frameworks.
 publishDate: June 13, 2025
-date: 2025-06-12
+date: 2025-06-13
 img: "/img/cover_2.svg"
 tags: ["blog"]
 ---
