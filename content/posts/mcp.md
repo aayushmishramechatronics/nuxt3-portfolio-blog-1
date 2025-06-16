@@ -1,6 +1,6 @@
 ---
 title: Modern Context Protocol
-description: A New AI Revolution or just another Upgrade?
+description: A New AI Revolution or just Another Upgrade?
 publishDate: June 16, 2025
 date: 2025-06-16
 img: "/img/cover_3.svg"
