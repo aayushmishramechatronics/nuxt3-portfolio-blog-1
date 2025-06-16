@@ -23,7 +23,7 @@ useHead({
     },
     {
       property: "og:url",
-      content: "https://tihunov.com",
+      content: "https://portfolio-v0-alpha.vercel.app",
     },
     {
       property: "og:type",
@@ -69,7 +69,7 @@ useHead({
   <div class="max-w-5xl sm:px-4 xl:px-0 items-center py-8 mx-auto">
     <div class="sm:w-5/6 pt-10 sm:pt-20 pb-16">
       <h1 class="text-4xl sm:text-6xl font-recoleta font-semibold">
-        Aayush Mishra
+        Blogspot
       </h1>
       <p class="text-2xl sm:text-3xl font-recoleta mt-10 font-light">
         Hi! This website is about posting blogs – Technical (Game Development, Web Development, PCB/CAD Design, etc.), Astronomy/Astrophysics, and 
