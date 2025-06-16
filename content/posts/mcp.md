@@ -1,6 +1,6 @@
 ---
 title: Modern Context Protocol
-description: Understanding the Modern Context Protocol — A Simple Guide to Smarter Digital Conversations
+description: A New AI Revolution or just another Upgrade?
 publishDate: June 16, 2025
 date: 2025-06-16
 img: "/img/cover_3.svg"
