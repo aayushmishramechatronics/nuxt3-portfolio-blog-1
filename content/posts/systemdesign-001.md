@@ -1,10 +1,10 @@
+---
 title: System Design #001 - How to Start with Distributed Systems
 description: Understanding Distributed Systems
 publishDate: July 1, 2025
 date: 2025-07-01
 img: "/img/cover\systemdesign.svg"
 tags: \["blog"]
-
 ---
 
 ## WTF is System Design?
