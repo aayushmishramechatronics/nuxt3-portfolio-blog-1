@@ -9,9 +9,8 @@ tags: ["blog"]
 
 ## WTF is System Design?
 Systems Design is the use of CS principles to build large scale distributed systems - 
-it involves converting business problems and requirements into technical solutions. 
+it involves converting business problems and requirements into technical solutions. senior engineers use system design patterns to make reliable, scalable and maintainable systems (and folks like you and me learn from them on how to continue building such systems).
 
-senior engineers use system design patterns to make reliable, scalable and maintainable systems (and folks like you and me learn from them on how to continue building such systems).
 ---
 
 ## Understanding System Design Primer (using a Pizza)
