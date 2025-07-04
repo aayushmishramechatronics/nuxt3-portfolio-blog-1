@@ -1,10 +1,10 @@
 ---
-title: System Design 002 – Horizontal vs Vertical Scaling
+title: System Design 002 – Horizontal v/s Vertical Scaling
 description: Understanding the Fundamental Scaling Strategies in System Design
 publishDate: July 3, 2025
 date: 2025-07-03
-img: "/img/cover\scaling.svg"
-tags: \["blog"]
+img: "/img/systemdesign2.svg"
+tags: ["blog"]
 ---
 
 ## WTF is Scaling?
