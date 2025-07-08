@@ -34,8 +34,7 @@ No prior game-development experience is required - although, just basic JavaScri
    ```bash
    mkdir my-phaser-game
    cd my-phaser-game
-````
-````
+   ```
 3. **Initialize npm and Install Phaser**
 
    ```bash
