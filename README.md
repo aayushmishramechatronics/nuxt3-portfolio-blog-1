@@ -1,6 +1,6 @@
 Soon coming update
 
-# Aayush's Personal Blog
+# Blogspot - Personal Blog
 
 - Framework: [Nuxt 3](https://nuxt.com/v3)
 - Deployment: [Vercel](https://vercel.com)
