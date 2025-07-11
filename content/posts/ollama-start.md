@@ -145,8 +145,9 @@ Below are some important Commands that you can use (only if you'd want to)
     ```
     PS C:\Users\aayus> ollama create <model>
     ```
-    you can use this command to customize your existing AI-Model to do tasks - the tasks which can be inputted separately in a extension-less file called as 'Modelfile' (don't worry - we'll discuss more about this command in our next blog)
-5. **start a local server to access any of your model via REST API:**
+    you can use this command to customize your existing AI-Model to do tasks - the tasks which can be inputted separately in a extension-less file called as
+    'Modelfile' (don't worry - we'll discuss more about this command in our next blog)
+6. **start a local server to access any of your model via REST API:**
     ```
     PS C:\Users\aayus> ollama serve 
     ```
