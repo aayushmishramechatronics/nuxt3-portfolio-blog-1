@@ -1,12 +1,11 @@
 ---
-title: Run Qwen 3 LLM Locally with Ollama: A Step-by-Step Guide
-description: Deploying Qwen 3 Locally with Ollama CLI.
+title: Run Qwen 3 LLM Locally with Ollama - A Step-by-Step Guide
+description: Deploying Qwen 3 Locally with Ollama CLI
 publishDate: July 11, 2025
 date: 2025-07-11
 img: "/img/ollama.svg"
 tags: ["blog"]
 ---
-
 ## Why use Qwen 3 LLM with Ollama?
 
 the reason I'm recommending to use **Qwen 3 LLM (with 1.7B Parameter)** is purely because of its light-weight and efficient performance - basically it's pretty fast and compatible with almost all laptops having limited RAM (we're talking 8GB or less here).
