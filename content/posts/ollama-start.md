@@ -4,7 +4,7 @@ description: Deploying Qwen 3 Locally with Ollama CLI.
 publishDate: July 11, 2025
 date: 2025-07-11
 img: "/img/cover/ollama.svg"
-tags: \["blog"]
+tags: ["blog"]
 ---
 
 ## Why use Qwen 3 LLM with Ollama?
