@@ -3,7 +3,7 @@ title: Run Qwen 3 LLM Locally with Ollama: A Step-by-Step Guide
 description: Deploying Qwen 3 Locally with Ollama CLI.
 publishDate: July 11, 2025
 date: 2025-07-11
-img: "/img/cover/ollama.svg"
+img: "/img/ollama.svg"
 tags: ["blog"]
 ---
 
