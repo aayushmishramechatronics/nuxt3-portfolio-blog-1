@@ -72,9 +72,8 @@ useHead({
         Blogspot
       </h1>
       <p class="text-2xl sm:text-3xl font-recoleta mt-10 font-light">
-        Hi! This website is about posting blogs – Technical (Game Development, Web Development, PCB/CAD Design, etc.), Astronomy/Astrophysics, and 
-        Mathematics (Game Theory, Algebra, Calculus, etc.).<br><br>
-        These are the domains which I'm specifically interested to talk/discuss about.
+        Hi! this website is about posting blogs – Technical (Game Development, Web Development, PCB/CAD Design, etc.), Astronomy/Astrophysics, and 
+        Mathematics (Game Theory, Algebra, Calculus, etc.)<br><br>
         Do check out this website every weekend for a new blog/article on the topics mentioned. Enjoy!
       </p>
       <div class="flex items-center font-recoleta mt-14">
