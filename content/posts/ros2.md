@@ -27,6 +27,7 @@ Let's do a small "With v/s Without" comparison for ROS2 to truly understand it's
 | **Security & Reliability**  | limited safety and reliability in critical tasks.           | built-in security and dependable operations for any use case.|
 
 ---
+
 ## Installing WSL for Windows OS
 
 Okay, so let's now talk about some points to keep in mind before installing WSL (Windows Subsystem for Linux) - 
@@ -47,6 +48,7 @@ Okay, so let's now talk about some points to keep in mind before installing WSL 
 3. After successfully installing Ubuntu 22.04 via WSL, you'll have to open it and set a username + password for Linux, so that you can use it securely when you're in the Ubuntu GUI.
 
 ---
+
 ## Install ROS2-Humble in Ubuntu 22.04 
 Follow the set of below mentioned commands to make sure that your Ubuntu is set-up properly and there are no break-points or fault so that we can smoothly install ROS2 in it.
 
@@ -88,7 +90,9 @@ Follow the set of below mentioned commands to make sure that your Ubuntu is set-
     source ~/.bashrc
     ```
     **Congratulations! you just successfully set-up ROS2-Humble in your Ubuntu-22.04 via WSL**
+   
 ---
+
 ## Verify Your Installation
 We want to make sure that we have successfully installed ROS2 in our Ubuntu-22.04 because if we later try to create a `node` (basically other name for a `file` in ROS2) and it doesn't get created, we'll be totally screwed.
 
@@ -105,6 +109,7 @@ We want to make sure that we have successfully installed ROS2 in our Ubuntu-22.0
     ```
     you should see an output somewhat like this - 
     `[INFO] [talker]: Publishing: 'Hello World: 1'`
+   
     ---
     then, open another terminal and type the below command - 
     ```
@@ -119,6 +124,7 @@ We want to make sure that we have successfully installed ROS2 in our Ubuntu-22.0
  - How to Save, Edit and Run a Sample Node
  - Configuring Console Scripts for the Entry Points in the `setup.py` file 
  - Understanding the Use and Meaning of various Commands in ROS2
+   
 ---
 ```
 Thank You for Reading this Blog! Written by Aayush A. Mishra - August, 2025
