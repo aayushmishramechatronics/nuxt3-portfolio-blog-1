@@ -9,9 +9,7 @@ tags: ["projects"]
 
 ## What's in this Blog?
 
-every robot you see in RViz or Gazebo starts with one thing: a URDF - without it, ROS2 has no idea what your robot looks like or how its joints are connected. 
-
-we've already learned how to install and set up different packages and libraries in ROS2-Humble in our [previous blog](https://nuxt3-portfolio-blog-1.vercel.app/posts/ros2_pkg), but this time we're going to move further into understanding ROS2 and its use-cases, one of which is using URDF (Unified Robot Description Format).
+we've already learned how to install and set up different packages and libraries in ROS2-Humble in our [previous blog](https://nuxt3-portfolio-blog-1.vercel.app/posts/ros2_pkg), but this time we're going to move further into understanding ROS2 and its use-cases, one of which is using URDF (Unified Robot Description Format) - every robot you see in RViz or Gazebo starts with one thing: a URDF - without it, ROS2 has no idea what your robot looks like or how its joints are connected. 
 
 > URDF is an XML-based specification used in ROS2 to describe the physical and kinematic properties of a robot, and a URDF file is primarily built using 2 elements - links & joints.
 
@@ -152,15 +150,15 @@ touch three_wheeled_robot.urdf
 
 [Follow this Link](https://github.com/aayushmishramechatronics/ros2-threewheel-robot/blob/main/src/robot_wheel/urdf/three_wheeled_robot.urdf) to get the complete code for the `three_wheeled_robot.urdf` file. To understand in brief what is happening in the URDF file, we have the following important points:
 
-1. **1. 5 Links, 5 Joints** - the robot is built from 5 physical links: a rectangular `base`, two driven wheels (`wheel_right_link` and `wheel_left_link`), a passive `caster` sphere at the rear, a `camera` box, and a `lidar` cylinder. Each link is connected to the base via its own joint.
+1. **5 Links, 5 Joints** - the robot is built from 5 physical links: a rectangular `base`, two driven wheels (`wheel_right_link` and `wheel_left_link`), a passive `caster` sphere at the rear, a `camera` box, and a `lidar` cylinder. Each link is connected to the base via its own joint.
 
-2. **2. Three-part Link Definition** - Every link defines three things: `<visual>` (how it looks), `<collision>` (its physical boundary for the physics engine), and `<inertial>` (mass and moment of inertia). All three are required for Gazebo to simulate the robot correctly.
+2. **Three-part Link Definition** - Every link defines three things: `<visual>` (how it looks), `<collision>` (its physical boundary for the physics engine), and `<inertial>` (mass and moment of inertia). All three are required for Gazebo to simulate the robot correctly.
 
-3. **3. Joint Types Matter** - The two drive wheels and the caster use `continuous` joints, meaning they can rotate freely. The camera and LiDAR use `fixed` joints since they don't move relative to the base.
+3. **Joint Types Matter** - The two drive wheels and the caster use `continuous` joints, meaning they can rotate freely. The camera and LiDAR use `fixed` joints since they don't move relative to the base.
 
-4. **4. Gazebo Material Overrides** - Standard URDF colors don't carry over into Gazebo automatically. We define `<gazebo reference>` blocks for each link to apply Gazebo-specific materials (e.g., `Gazebo/SkyBlue` for wheels, `Gazebo/WhiteGlow` for the base).
+4. **Gazebo Material Overrides** - Standard URDF colors don't carry over into Gazebo automatically. We define `<gazebo reference>` blocks for each link to apply Gazebo-specific materials (e.g., `Gazebo/SkyBlue` for wheels, `Gazebo/WhiteGlow` for the base).
 
-5. **5. Three Gazebo Plugins** - The URDF includes `libgazebo_ros_diff_drive.so` (controls wheel speed via the `cmd_vel` topic), `libgazebo_ros_camera.so` (streams camera images at 30fps), and `libgazebo_ros_ray_sensor.so` (publishes LiDAR scan data as `sensor_msgs/LaserScan`).
+5. **Three Gazebo Plugins** - The URDF includes `libgazebo_ros_diff_drive.so` (controls wheel speed via the `cmd_vel` topic), `libgazebo_ros_camera.so` (streams camera images at 30fps), and `libgazebo_ros_ray_sensor.so` (publishes LiDAR scan data as `sensor_msgs/LaserScan`).
 
 > **at this stage you should have:**
 > - `urdf/` folder created inside your package
@@ -230,15 +228,15 @@ as we have seen in the previous blogs of our ROS2-Series, every package has a `s
 
 here, we have the similar task of modifying the setup file. [Follow this Link](https://github.com/aayushmishramechatronics/ros2-threewheel-robot/blob/main/src/robot_wheel/setup.py) to get the complete code for the `setup.py` file, here's what the modifications accomplish:
 
-1. **1. `data_files block`** — This is the key addition to the default `setup.py`. It tells `colcon build` which non-Python assets to install alongside the package so they're accessible at runtime.
+1. **`data_files block`** — This is the key addition to the default `setup.py`. It tells `colcon build` which non-Python assets to install alongside the package so they're accessible at runtime.
 
-2. **2. launch files** — `glob('launch/*.py')` installs all `.launch.py` files to the package's shared directory, making them available via `ros2 launch robot_wheel <file>.launch.py`.
+2. **launch files** — `glob('launch/*.py')` installs all `.launch.py` files to the package's shared directory, making them available via `ros2 launch robot_wheel <file>.launch.py`.
 
-3. **3. URDF** — `glob('urdf/*')` installs the URDF file so `get_package_share_directory()` can locate it at runtime. Without this line, your launch files will fail to find the robot model.
+3. **URDF** — `glob('urdf/*')` installs the URDF file so `get_package_share_directory()` can locate it at runtime. Without this line, your launch files will fail to find the robot model.
 
-4. **4. other asset folders** — `rviz/`, `worlds/`, and `meshes/` are registered even if currently empty, so adding files to them later won't require further changes to `setup.py`.
+4. **other asset folders** — `rviz/`, `worlds/`, and `meshes/` are registered even if currently empty, so adding files to them later won't require further changes to `setup.py`.
 
-5. **5. `console_scripts`** — Left empty intentionally. This package uses launch files to start nodes rather than standalone Python executables, so no entry points are needed here.
+5. **`console_scripts`** — Left empty intentionally. This package uses launch files to start nodes rather than standalone Python executables, so no entry points are needed here.
 
 > **Common Mistake:** forgetting to rebuild after editing `setup.py` - always run `colcon build --symlink-install` followed by `source install/setup.bash` after any changes to this file, otherwise your edits won't take effect.
 
@@ -320,16 +318,16 @@ currently:      speed 0.50      turn 1.00
 in this blog, we built and simulated a three-wheeled differential drive robot entirely in ROS2.
 
 **What we Built:**
--- a complete URDF model with a base, two drive wheels, a passive caster, a camera, and a LiDAR sensor
--- two launch files - `display.launch.py` for quick visualization in RViz, and `gazebo.launch.py` for full physics simulation in Gazebo
--- a properly configured `setup.py` that makes all assets (launch files, URDF, RViz configs) available after a colcon build
+- a complete URDF model with a base, two drive wheels, a passive caster, a camera, and a LiDAR sensor
+- two launch files - `display.launch.py` for quick visualization in RViz, and `gazebo.launch.py` for full physics simulation in Gazebo
+- a properly configured `setup.py` that makes all assets (launch files, URDF, RViz configs) available after a colcon build
 
 **What you Learned:**
--- how URDF links and joints define a robot's physical structure
--- the difference between `continuous` and `fixed` joints
--- how Gazebo plugins connect your robot model to ROS2 topics like `cmd_vel` and `sensor_msgs/LaserScan`
--- how launch files coordinate multiple nodes in a single command
--- how to drive a simulated robot using `teleop_twist_keyboard`
+- how URDF links and joints define a robot's physical structure
+- the difference between `continuous` and `fixed` joints
+- how Gazebo plugins connect your robot model to ROS2 topics like `cmd_vel` and `sensor_msgs/LaserScan`
+- how launch files coordinate multiple nodes in a single command
+- how to drive a simulated robot using `teleop_twist_keyboard`
 
 **What's Next?**
 in the next blog, we'll go deeper into RViz - visualizing the TF tree, inspecting sensor data, and understanding how coordinate frames relate to each other in a real ROS2 robot project.
