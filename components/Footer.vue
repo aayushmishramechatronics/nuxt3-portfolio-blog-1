@@ -24,7 +24,7 @@ const currentYear = new Date();
         >Open Sourced On
         <a
           class="underline"
-          href="https://github.com/aayushmishramechatronics/nuxt3-portfolio-blog"
+          href="https://github.com/aayushmishramechatronics"
         >
           Github</a
         >
