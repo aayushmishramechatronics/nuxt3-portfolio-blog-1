@@ -191,11 +191,11 @@ touch display.launch.py
 
 [Follow this Link](https://github.com/aayushmishramechatronics/ros2-threewheel-robot/blob/main/src/robot_wheel/launch/display.launch.py) to get the complete code for the `display.launch.py` file. Here's what this launch file does:
 
-1. **1. Loads the URDF** - reads `three_wheeled_robot.urdf` from the package's `urdf/` folder using `get_package_share_directory()` and passes it to `robot_state_publisher` as the `robot_description` parameter, this is what makes ROS2 aware of your robot's structure.
+1. **Loads the URDF** - reads `three_wheeled_robot.urdf` from the package's `urdf/` folder using `get_package_share_directory()` and passes it to `robot_state_publisher` as the `robot_description` parameter, this is what makes ROS2 aware of your robot's structure.
 
-2. **2. `joint_state_publisher_gui`** - launches a small GUI with sliders for each joint, letting you manually move the wheels and verify that the URDF is correctly assembled - without needing Gazebo at all.
+2. **`joint_state_publisher_gui`** - launches a small GUI with sliders for each joint, letting you manually move the wheels and verify that the URDF is correctly assembled - without needing Gazebo at all.
 
-3. **3. RViz2** - opens the 3D visualization tool so you can inspect the robot model, see all the links and coordinate frames (TF), and confirm that everything is connected correctly.
+3. **RViz2** - opens the 3D visualization tool so you can inspect the robot model, see all the links and coordinate frames (TF), and confirm that everything is connected correctly.
 
 #### _`gazebo.launch.py`_
 
@@ -205,15 +205,15 @@ touch gazebo.launch.py
 
 [Follow this Link](https://github.com/aayushmishramechatronics/ros2-threewheel-robot/blob/main/src/robot_wheel/launch/gazebo.launch.py) to get the complete code for the `gazebo.launch.py` file, and if you want to understand what is happening in this launch file then here's what this launch file does:
 
-1. **1. `robot_state_publisher`** - same as in `display.launch.py`, it reads the URDF and continuously broadcasts the TF tree for all robot links so ROS2 always knows where each link is relative to the others.
+1. **`robot_state_publisher`** - same as in `display.launch.py`, it reads the URDF and continuously broadcasts the TF tree for all robot links so ROS2 always knows where each link is relative to the others.
 
-2. **2. `joint_state_publisher`** - publishes neutral (zero) joint states when the robot first spawns - without this, Gazebo may report TF errors at startup.
+2. **`joint_state_publisher`** - publishes neutral (zero) joint states when the robot first spawns - without this, Gazebo may report TF errors at startup.
 
-3. **3. `Gazebo startup`** - starts Gazebo in `--verbose` mode and loads two essential plugins: `libgazebo_ros_init.so` (connects ROS2 to Gazebo) and `libgazebo_ros_factory.so` (allows spawning robot models from ROS2 into the simulation).
+3. **`Gazebo startup`** - starts Gazebo in `--verbose` mode and loads two essential plugins: `libgazebo_ros_init.so` (connects ROS2 to Gazebo) and `libgazebo_ros_factory.so` (allows spawning robot models from ROS2 into the simulation).
 
-4. **4. `TimerAction (8-second delay)`** - waits 8 seconds before attempting to spawn the robot, this is intentional as Gazebo needs time to fully start up before a model can be inserted, reducing this delay often causes the spawn to fail silently.
+4. **`TimerAction (8-second delay)`** - waits 8 seconds before attempting to spawn the robot, this is intentional as Gazebo needs time to fully start up before a model can be inserted, reducing this delay often causes the spawn to fail silently.
 
-5. **5. `spawn_entity.py`** — After the delay, reads the robot model from the `/robot_description` topic and spawns it into the running Gazebo world as `threewheel_robot`.
+5. **`spawn_entity.py`** — After the delay, reads the robot model from the `/robot_description` topic and spawns it into the running Gazebo world as `threewheel_robot`.
 
 ![Three-Wheeled Robot Spawned in Gazebo Environment](/img/gazebo_vscode.jpg)
 
