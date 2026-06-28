@@ -72,7 +72,7 @@ useHead({
         Blogspot
       </h1>
       <p class="text-2xl sm:text-3xl font-recoleta mt-10 font-light">
-        Hi! this website is about posting blogs – Technical (Game Development, Web Development, PCB/CAD Design, etc.), Astronomy/Astrophysics, and 
+        Hi! this website is all about posting blogs related to - Technical (Game/App Development, Robotics, PCB/CAD Design, etc.), Astronomy/Astrophysics, and 
         Mathematics (Game Theory, Algebra, Calculus, etc.)<br><br>
         Do check out this website every weekend for a new blog/article on the topics mentioned. Enjoy!
       </p>
@@ -80,7 +80,7 @@ useHead({
         Follow Me:
         <a
           target="_blank"
-          href="https://twitter.com/aayushmishra"
+          href="https://x.com/AayushMish33852"
           class="social-home-button mr-2 ml-3"
         >
           <IconsTwitter class="w-4"
