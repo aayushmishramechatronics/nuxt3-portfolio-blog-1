@@ -268,6 +268,7 @@ ros2 launch robot_wheel gazebo.launch.py
 the output for the above command will somewhat look like the one mentioned below - wait for Gazebo to fully open before moving on to Terminal 2.
 
 ![Gazebo Output](/img/gazebo_output2.jpg)
+
 ![Gazebo Output](/img/gazebo_output3.jpg)
 
 ![Three-Wheeled Robot in Gazebo](/img/gazebo.jpg)
